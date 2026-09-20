@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Research | Oliver Rupp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+<header id="header" class="site-header">
+    <h1><a href="index.html">Oliver Rupp</a></h1>
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="research.html" class="active">Research</a>
+        <a href="software.html">Software</a>
+        <a href="docs/Oliver_Rupp_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </nav>
+    <a href="#menu" class="mobile-menu-link">Menu</a>
+</header>
+
+<nav id="menu">
+    <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="docs/Oliver_Rupp_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <a href="#" class="close">Close</a>
+    </div>
+</nav>
+
+<section class="page-title">
+    <div class="inner">
+        <h2>Research</h2>
+        <p>Theoretical and computational work in astrophysics, dense matter, and numerical modeling.</p>
+    </div>
+</section>
+
+<section id="wrapper">
+
+<section id="ccsn" class="wrapper style1">
+    <div class="inner project-page">
+        <h2 class="major">Core-Collapse Supernovae &amp; Hadron-Quark Phase Transitions</h2>
+        <div class="project-grid">
+            <div>
+                <p>
+                    At the University of Notre Dame, I use the <a href="https://github.com/evanoconnor/GR1D" target="_blank">GR1D</a> 
+                    hydrodynamics code to study how a first-order transition from hadronic matter to quark matter can 
+                    affect core-collapse supernova evolution and explodability.
+                </p>
+                <p>
+                    Our simulations use solar-metallicity progenitors spanning 14-40 M<sub>&odot;</sub>
+                    and investigate the effects of neutrino-heated turbulence through the STIR model.
+                    I also developed <a href="https://github.com/oj-rupp/CompOSE-to-SRO" target="_blank">Python tools</a> to convert hybrid equation-of-state tables from
+                    the <a href="https://compose.obspm.fr/" target="_blank">CompOSE</a> database into the format, definitions, and units required by GR1D 
+                    <a href="https://stellarcollapse.org/SROEOS.html" target="_blank">(SROEOS)</a>.
+                </p>
+                <p>
+                    A major focus of the current work is the origin of radial oscillations associated
+                    with the phase transition. The simulations indicate that the oscillations arise
+                    when the quark-matter coexistence region develops an adiabatic index
+                    &gamma; &lt; 4/3 about halfway inside the proto-neutron star. The analysis identifies higher
+                    harmonics with a node near the region where the adiabatic index crosses 4/3.
+                </p>
+                <p>
+                    The working manuscript also examines progenitor dependence, shock evolution,
+                    phase-space trajectories, and neutrino signals. With STIR turbulence included,
+                    many models explode before the secondary shock or quark-matter-induced
+                    oscillations develop, while a smaller subset exhibits the oscillatory behavior.
+                </p>
+            </div>
+        </div>
+
+        <h3>Selected figures</h3>
+        <div class="figure-grid">
+            <figure>
+                <img src="figures/B145_turb_sweep_shock_v3.png">
+                <figcaption>
+                    Shock evolution across progenitor models using the B145 hybrid quark-hadron 
+                    equation of state and STIR.
+            </figcaption>
+            </figure>
+
+            <figure>
+                <img src="figures/B145_turb_sweep_cenrho_v3.png">
+                <figcaption>
+                    Central density evolution across progenitor models using the STOS-B145 hybrid quark-hadron 
+                    equation of state and STIR.
+                </figcaption>
+            </figure>
+        </div>
+
+        <figure>
+            <video autoplay muted loop playsinline>
+                <source src="figures/phase_diagram_anim.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                Animation of the trajectory through phase space for the s25 progenitor, 
+                STOS-B145 equation of state, and without STIR. The trajectory is plotted at a radius 
+                of 8 km where the quark fraction is maximal.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <video autoplay muted loop playsinline>
+                <source src="figures/STIR_s24_lineanim.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                Radial animation of the oscillations in the proto-neutron star of the s24 progenitor 
+                with STIR induced by the hadron-quark phase transition.
+            </figcaption>
+        </figure>
+
+        <p class="project-links">
+            <a href="figures/APS_DNP_2025_Poster.png" class="button" target="_blank" rel="noopener noreferrer">View Poster</a>
+            <!-- <a href="assets/papers/ccsn-manuscript.pdf" class="button" target="_blank" rel="noopener noreferrer">View Manuscript</a> -->
+        </p>
+    </div>
+</section>
+
+<section id="grb" class="wrapper alt style2">
+    <div class="inner project-page">
+        <h2 class="major">Gamma-Ray Burst Afterglow Modeling</h2>
+        <div class="project-grid">
+            <div>
+                <p>
+                    During a 2026 Research Experience for Undergraduates at the University of
+                    Utah, I worked with Dr. Tanmoy Laskar on parameter recovery in gamma-ray burst (GRB)
+                    afterglow modeling.
+                </p>
+                <p>
+                    I benchmarked parameter recovery across three GRB afterglow modeling codes:
+                    GAMMA, PyFRS, and VegasAfterglow. I developed a model-agnostic Monte Carlo
+                    Markov Chain program to automate sampling and used it to study parameter
+                    degeneracies and differences in model fitting.
+                </p>
+            </div>
+        </div>
+        
+        <h3>Selected figures</h3>
+        <div class="figure-grid-grb">
+            <figure>
+                <img src="figures/GAMMA_degen_nuafit.png">
+                <figcaption>Parameter recovery degeneracy from GRB modeling code GAMMA compared with
+                    theoretical degenracy from Granot and Sari 2002.
+            </figcaption>
+            </figure>
+
+            <figure>
+                <img src="figures/VA_degen_nuafit.png">
+                <figcaption>Parameter recovery degeneracy from GRB modeling code GAMMA compared with
+                    theoretical degenracy from Granot and Sari 2002.
+            </figcaption>
+            </figure>
+
+            <figure>
+                <img src="figures/PyFRS_degen_nuafit.png">
+                <figcaption>Parameter recovery degeneracy from GRB modeling code GAMMA compared with
+                    theoretical degenracy from Granot and Sari 2002.
+            </figcaption>
+            </figure>
+
+        </div>
+
+        <figure>
+            <img src="figures/GRB_nuc_degen_bars.png">
+            <figcaption>Comparison of recovered parameter degeneracy slopes to those predicted by the 
+                equations of Granot and Sari 2002. Different codes track distinct parameter 
+                degeneracies when fitting the same dataset.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="figures/GRBMCMC_top_right_n_0_-1_E52_3.png">
+            <figcaption>Parameter distributions from the GRB Monte Carlo Markov Chain run.
+                Plots on the innermost diagonals show histograms of recovered parameters, while all others 
+                are contour plots showing joint probability distributions for a given parameter pair.
+            </figcaption>
+        </figure>
+
+        <p class="project-links">
+            <a href="figures/REU_2026_Poster.png" class="button" target="_blank" rel="noopener noreferrer">View Poster</a>
+        </p>
+    </div>
+</section>
+
+<section id="oscillations" class="wrapper alt style1">
+    <div class="inner project-page">
+        <h2 class="major">Neutron-Star Oscillation Model</h2>
+        <p>
+            As part of the supernova project, I developed a Python-based model to investigate
+            radial oscillations of neutron stars. The model combines a Tolman-Oppenheimer-Volkoff
+            calculation with a Sturm-Liouville eigenvalue problem.
+        </p>
+        <p>
+            This project provided a complementary semi-analytic approach to understanding the
+            oscillations observed in the hydrodynamical simulations and helped connect the
+            numerical results to the underlying stellar structure.
+        </p>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="inner">
+        <h2 class="major">Contact</h2>
+        <ul class="contact">
+            <li class="icon solid fa-envelope"><a href="mailto:orupp@nd.edu">orupp@nd.edu</a></li>
+            <li class="icon brands fa-github"><a href="https://github.com/oj-rupp" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </div>
+</section>
+
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

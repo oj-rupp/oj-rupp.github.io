@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Software | Oliver Rupp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+<header id="header" class="site-header">
+    <h1><a href="index.html">Oliver Rupp</a></h1>
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="research.html">Research</a>
+        <a href="software.html" class="active">Software</a>
+        <a href="docs/Oliver_Rupp_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </nav>
+    <a href="#menu" class="mobile-menu-link">Menu</a>
+</header>
+
+<nav id="menu">
+    <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="docs/Oliver_Rupp_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <a href="#" class="close">Close</a>
+    </div>
+</nav>
+
+<section class="page-title">
+    <div class="inner">
+        <h2>Software</h2>
+        <p>Scientific computing tools developed alongside my research.</p>
+    </div>
+</section>
+
+<section class="wrapper style1">
+    <div class="inner">
+        <section class="software-list">
+
+            <article class="software-card">
+                <div class="software-number">01</div>
+                <div class="software-content">
+                    <h2 class="major">CompOSE &rarr; SRO EOS Converter</h2>
+                    <p>
+                        A Python tool for converting equation-of-state tables from the CompOSE
+                        database into a format compatible with the Schneider-Roberts-Ott (SRO)
+                        representation used by GR1D workflows.
+                    </p>
+                    <p>
+                        The converter handles the required table structure, physical definitions,
+                        units, derivatives, and low-temperature / low-density extrapolation needed
+                        for use with the GR1D interpolation scheme.
+                    </p>
+                    <a href="https://github.com/oj-rupp" class="button" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </article>
+
+            <article class="software-card">
+                <div class="software-number">02</div>
+                <div class="software-content">
+                    <h2 class="major">GR1D Visualization &amp; Analysis</h2>
+                    <p>
+                        Tools for processing and visualizing output from GR1D simulations,
+                        supporting analysis of shock evolution, thermodynamic quantities,
+                        oscillations, and other simulation diagnostics.
+                    </p>
+                    <p>
+                        This project is intended to make repeated analysis of large sets of
+                        simulations more reproducible and efficient.
+                    </p>
+                    <a href="https://github.com/oj-rupp" class="button" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </article>
+
+            <article class="software-card">
+                <div class="software-number">03</div>
+                <div class="software-content">
+                    <h2 class="major">Model-Agnostic GRB MCMC Pipeline</h2>
+                    <p>
+                        A Python-based Monte Carlo Markov Chain framework developed during my
+                        University of Utah REU to automate sampling across gamma-ray burst
+                        afterglow modeling codes.
+                    </p>
+                    <p>
+                        The pipeline was designed to be model-agnostic and was used to benchmark
+                        parameter recovery across GAMMA, PyFRS, and VegasAfterglow and investigate
+                        degeneracies in fitted parameters.
+                    </p>
+                    <a href="https://github.com/oj-rupp" class="button" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </article>
+
+        </section>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="inner">
+        <h2 class="major">Contact</h2>
+        <ul class="contact">
+            <li class="icon solid fa-envelope"><a href="mailto:orupp@nd.edu">orupp@nd.edu</a></li>
+            <li class="icon brands fa-github"><a href="https://github.com/oj-rupp" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </div>
+</section>
+
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

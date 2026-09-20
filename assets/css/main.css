@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3464,8 +3467,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,8 +3579,10 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3592,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3609,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -4062,8 +4072,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4142,3 +4154,138 @@ input, select, textarea {
 		}
 
 	}
+
+/* New adjustments */
+
+/* Hide the text version of the mobile menu and use the hamburger icon. */
+#header.site-header .mobile-menu-link {
+	display: none !important;
+	position: relative;
+	width: 3.5em;
+	height: 3.5em;
+	padding: 0 !important;
+	border: 0 !important;
+	font-size: 0 !important;
+	line-height: 1;
+	text-indent: -9999px;
+}
+
+#header.site-header .mobile-menu-link::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0.75em;
+	width: 1.35em;
+	height: 2px;
+	background: currentColor;
+	box-shadow: 0 -0.42em currentColor, 0 0.42em currentColor;
+}
+
+/* Keep page titles clear of the fixed header and give the subtitle more presence. */
+.page-title {
+	position: relative;
+	margin-top: 3.5em !important;
+	padding: 6.5em 0 5em 0 !important;
+}
+
+.page-title .inner {
+	position: relative;
+}
+
+.page-title h2 {
+	font-size: 2.1em !important;
+	margin-bottom: 0.8em !important;
+	padding-left: 2em;
+}
+
+.page-title p {
+	font-size: 1.2em !important;
+	line-height: 1.6 !important;
+	letter-spacing: 0.02em !important;
+	padding-left: 2em;
+	max-width: 48em;
+}
+
+.software-number {
+	font-size: 2.5em;
+	font-weight: 550;
+	line-height: 2;
+}
+
+.software-content {
+	margin-bottom: 2em;
+}
+
+.figure-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.figure-grid figure img,
+.figure-grid figure video {
+    width: 100%;
+    height: auto;
+}
+
+figure img,
+figure video {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	margin-bottom: 1em;
+	outline: 3px solid #070707;
+}
+
+figure {
+	margin-bottom: 2em;
+}
+
+.figure-grid-grb {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+	margin-bottom: 2em;
+}
+
+.figure-grid-grb figure {
+    margin: 0;
+}
+
+.figure-grid-grb figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    outline: 3px solid #070707;
+}
+
+@media screen and (max-width: 980px) {
+	#header.site-header .mobile-menu-link {
+		display: inline-block !important;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.page-title {
+		margin-top: 2.75em !important;
+		padding: 4.5em 0 3.5em 0 !important;
+	}
+
+	.page-title h2 {
+		font-size: 1.6em !important;
+	}
+
+	.page-title p {
+		font-size: 1em !important;
+		line-height: 1.5 !important;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+    .figure-grid {
+        grid-template-columns: 1fr;
+    }
+}
